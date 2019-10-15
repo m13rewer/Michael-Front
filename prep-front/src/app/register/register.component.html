@@ -1,0 +1,14 @@
+<ng-container *ngIf="!registered; else goLogin">
+    <h2>Register</h2>
+    <div id="register">
+      <input class="info" type="text" placeholder="username" [(ngModel)]="username"/>
+      <input class="info" type="password" placeholder="password" [(ngModel)]="password"/>
+      <input class="info" type="text" placeholder="first name" [(ngModel)]="firstname"/>
+      <input class="info" type="text" placeholder="last name" [(ngModel)]="lastname"/>
+      <input id="register-button" type="submit" value="register" (click)="register()" />
+    </div>
+  </ng-container>
+  
+  <ng-template #goLogin>
+    <h2>Registration complete! Please Sign in</h2>
+  </ng-template>

@@ -1,0 +1,70 @@
+h2 {
+    padding-left: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+#login {
+    padding-left: 10px;
+}
+
+#login > input:nth-child(2) {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#login > input:nth-child(1):focus, #login > input:nth-child(2):focus {
+    outline: none;
+}
+
+#login > input:nth-child(1), #login > input:nth-child(2) {
+    width: 200px;
+    height:34px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+button {
+    margin-top: 10px;
+    width: 100px;
+    height:40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #347deb;
+    border-top-color: lightblue;
+    border-left-color: lightblue;
+    border-bottom-color: darkblue;
+    border-right-color: darkblue;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#login-button {
+    width: 100px;
+    height:40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #347deb;
+    border-top-color: lightblue;
+    border-left-color: lightblue;
+    border-bottom-color: darkblue;
+    border-right-color: darkblue;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}

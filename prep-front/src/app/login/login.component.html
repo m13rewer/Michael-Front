@@ -1,0 +1,32 @@
+<ng-container *ngIf="!loggedAccount; else display">
+    <h2>Sign in</h2>
+    <div id="login" action="post" >
+      <input type="text" placeholder="username" [(ngModel)]="username"/>
+      <input type="password" placeholder="password" [(ngModel)]="password" (keyup.enter)="login()"/>
+      <input id="login-button" type="submit" value="login" (click)="login()"/>
+    </div>
+    </ng-container>
+    
+    <ng-template #display>
+      <div id="login">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <div>
+              <span>Welcome {{loggedAccount.username}}!</span>
+            </div>
+          </li>
+          <div *ngIf='loggedAccount.admin == 1'>
+            <br>
+            <span>Admin priveleges!</span> <br>
+            <div id="admin" action="post" >
+              <a routerLink="/admin" routerLinkActive="active"><button class="btn btn-warning">Admin View</button></a>
+            </div>
+            <br>
+          </div>
+    
+          <li class="nav-item">
+            <button class="btn btn-danger" (click)="logout()">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </ng-template>

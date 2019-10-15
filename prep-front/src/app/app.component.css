@@ -1,0 +1,21 @@
+#login-route {
+    margin-right: 10px;
+    color: white;
+}
+
+#register-route {
+    color: white;
+}
+
+nav {
+    background-color: grey;
+    padding-left: 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    padding-left: 10px;
+}
